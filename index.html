@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- Main Style File  -->
+    <link rel="stylesheet" href="styles/style.css" />
+    <!-- Font Awesome  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <!-- Font Google  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500&family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <!-- Start The Haader  -->
+      <header>
+        <img src="./images/logo.png" alt="" />
+        <h2>Agenturen</h2>
+        <p>Deutschland</p>
+        <div class="buttons">
+          <button>Designer</button>
+          <button>Agenturen</button>
+          <button>Jobs</button>
+        </div>
+        <input type="text" name="" id="" placeholder="Suchen" />
+      </header>
+      <!-- End The Haader  -->
+
+      <!-- Start The Main  -->
+      <main>
+        <div class="box">
+          <p>Lorem, ipsum dolor.</p>
+        </div>
+        <div class="box">
+          <p>Lorem, ipsum dolor.</p>
+        </div>
+        <div class="box">
+          <p>Lorem, ipsum dolor.</p>
+        </div>
+        <div class="box">
+          <p>Lorem, ipsum dolor.</p>
+        </div>
+        <div class="box">
+          <p>Lorem, ipsum dolor.</p>
+        </div>
+        <div class="box">
+          <p>Lorem, ipsum dolor.</p>
+        </div>
+        <div class="box">
+          <p>Lorem, ipsum dolor.</p>
+        </div>
+        <div class="box">
+          <p>Lorem, ipsum dolor.</p>
+        </div>
+        <div class="box">
+          <p>Lorem, ipsum dolor.</p>
+        </div>
+        <div class="box">
+          <p>Lorem, ipsum dolor.</p>
+        </div>
+        <div class="box">
+          <p>Lorem, ipsum dolor.</p>
+        </div>
+        <div class="box">
+          <p>Lorem, ipsum dolor.</p>
+        </div>
+      </main>
+      <!-- End The Main  -->
+
+      <!-- Satrt The Footer  -->
+      <footer>
+        <a href="agentur.html" target="_blank">Agentur Eintragen</a>
+
+        <div class="words">
+          <p>Lorem.</p>
+          <p>Eveniet.</p>
+          <p>Eius?</p>
+          <p>Harum.</p>
+          <p>Doloremque.</p>
+          <p>Laborum!</p>
+          <p>Commodi.</p>
+          <p>Praesentium!</p>
+          <p>Maxime!</p>
+          <p>Laborum?</p>
+          <p>Odit!</p>
+          <p>Cupiditate.</p>
+          <p>Maiores!</p>
+          <p>Laborum?</p>
+          <p>Suscipit.</p>
+        </div>
+      </footer>
+      <!-- End The Footer  -->
+    </div>
+
+    <script>
+      let theWords = document.querySelector("footer .words");
+
+      window.addEventListener("scroll", () => {
+        if (window.pageYOffset >= 400) theWords.classList.add("show");
+        else theWords.classList.remove("show");
+      });
+    </script>
+  </body>
+</html>

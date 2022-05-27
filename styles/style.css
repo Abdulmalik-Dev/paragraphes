@@ -1,0 +1,138 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Fredoka", sans-serif;
+  font-family: "Open Sans", sans-serif;
+  background-color: lightgray;
+}
+
+.container footer .words p, .container footer a, .container header input, .container header .buttons button {
+  border: none;
+  border-radius: 150px;
+  outline: none;
+  padding: 8px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.container {
+  background-color: #bbb7b7;
+  margin: 0 50px;
+  text-align: center;
+  padding: 100px 50px;
+}
+@media (min-width: 1000px) {
+  .container {
+    width: 1000px;
+    margin: auto;
+  }
+}
+.container header {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.container header img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: 50px auto;
+}
+.container header h2,
+.container header p {
+  text-transform: uppercase;
+  display: none;
+}
+@media (max-width: 750px) {
+  .container header h2,
+.container header p {
+    display: block;
+  }
+}
+.container header .buttons {
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+}
+.container header .buttons button {
+  background-color: #c7c4c4;
+  flex: 1;
+}
+@media (max-width: 750px) {
+  .container header .buttons button {
+    display: none;
+  }
+}
+.container header .buttons button:hover {
+  background-color: #b5aeae;
+}
+.container header input {
+  text-align: center;
+}
+.container header input::placeholder {
+  color: black;
+}
+.container header input:focus::placeholder {
+  color: #c7c4c4;
+}
+.container main {
+  margin-top: 50px;
+  box-shadow: 0px 0px 4px 1px #ab9d9d;
+  border-radius: 10px;
+  padding: 10px 0;
+  background-color: #b3b1b1;
+}
+.container main .box {
+  padding: 3px;
+}
+.container main .box:not(:last-of-type) {
+  border-bottom: 1px solid #ab9d9d;
+}
+.container main .box p {
+  text-transform: uppercase;
+}
+.container footer {
+  display: flex;
+  flex-direction: column;
+  margin-top: 40px;
+  overflow-y: hidden;
+}
+.container footer a {
+  background-color: gold;
+  text-decoration: none;
+  color: black;
+}
+.container footer .words {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  margin-top: 40px;
+  transform: translateY(300px);
+  opacity: 0;
+  transition: 1s;
+}
+.container footer .words.show {
+  transform: translateY(0);
+  opacity: 1;
+}
+@media (max-width: 750px) {
+  .container footer .words {
+    display: none;
+  }
+}
+.container footer .words p {
+  background: #b3b1b1;
+  padding: 10px 20px;
+}
+.container footer .words p:hover {
+  background-color: #b5aeae;
+}
+
+/*# sourceMappingURL=style.css.map */
